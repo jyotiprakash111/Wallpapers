@@ -12,6 +12,7 @@ function HomeScreen() {
 }
 
 function SettingsScreen() {
+    console.log("data", )
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Settings!</Text>
@@ -22,7 +23,7 @@ function SettingsScreen() {
 const Tab = createBottomTabNavigator();
 
 export default function App() {
-  return (
+    return (
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />

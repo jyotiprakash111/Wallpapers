@@ -1,6 +1,4 @@
-
 import * as React from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AwesomeBtn from '../components/awesomeBtn';
@@ -16,8 +14,8 @@ function App() {
       <Stack.Navigator initialRouteName='Tab'>
         <Stack.Screen name="Tab" component={TabScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="DemoScrn" component={DemoScrn} />
-        <Stack.Screen name="Awesomebtn" component={AwesomeBtn} />
-        <Stack.Screen name="AnimatedMenu" component={AnimatedMenu} options={{ headerShown: false }}/>
+        {/* <Stack.Screen name="Awesomebtn" component={AwesomeBtn} />
+        <Stack.Screen name="AnimatedMenu" component={AnimatedMenu} options={{ headerShown: false }}/> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
