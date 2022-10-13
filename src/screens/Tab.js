@@ -5,6 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import SettingScreen from '../hoc/Counter';
 import Home2 from '../screens/home';
+import Flatlist from '../screens/flatList';
 
 const Tab = createBottomTabNavigator();
 
@@ -30,8 +31,8 @@ export default function App() {
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen name="Home" component={Home2} />
-        <Tab.Screen name="Settings" component={SettingScreen} />
+        <Tab.Screen name="Home" component={Home2} options={{headerShown: false}}/>
+        <Tab.Screen name="Settings" component={SettingScreen} options={{headerShown: false}}/>
       </Tab.Navigator>
     );
 }

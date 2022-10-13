@@ -11,8 +11,16 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Tab'>
-        <Stack.Screen name="Tab" component={TabScreen} options={{ headerShown: false }}/>
+      <Stack.Navigator initialRouteName='Tab'  screenOptions={{
+        headerStyle: {
+          backgroundColor: '#3944F7',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }}>
+        <Stack.Screen name="Tab" component={TabScreen} />
         <Stack.Screen name="DemoScrn" component={DemoScrn} />
         {/* <Stack.Screen name="Awesomebtn" component={AwesomeBtn} />
         <Stack.Screen name="AnimatedMenu" component={AnimatedMenu} options={{ headerShown: false }}/> */}
