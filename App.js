@@ -5,10 +5,12 @@ import MainStack from './src/stackdemo';
 // import Tabs from './src/tab';
 import Tabs from './src/navigation/MainStack';
 
+import EYTask from './src/EY/parentsCharts';
+
 const App = () => {
   return (
     <View style={{ flex: 1 }}>
-      <Tabs />
+      <MainStack />
     </View>
   )
 }
