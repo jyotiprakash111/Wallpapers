@@ -1,17 +1,10 @@
-import React from 'react';
-import {View} from 'react-native';
-
-import MainStack from './src/stackdemo';
-// import Tabs from './src/tab';
-import Tabs from './src/navigation/MainStack';
-
-import EYTask from './src/EY/parentsCharts';
-
-const App = () => {
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import MainStack from './src/navigation/MainStack';
+export default function App() {
   return (
-    <View style={{ flex: 1 }}>
-      <MainStack />
-    </View>
+   <MainStack/>
   )
 }
-export default App;
+
+const styles = StyleSheet.create({})

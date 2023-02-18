@@ -19,13 +19,3 @@ export function actuactualPixelSize(size) {
     }
   }
 
-const TextFontScalling = (props) =>{
-    return(
-        <View>
-            <Text style={{fontSize:actuactualPixelSize(10)}}>
-               heelo
-            </Text>
-        </View>
-    )
-}
-export default TextFontScalling;
